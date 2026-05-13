@@ -12,15 +12,16 @@ A multi-client TCP file sharing system built from scratch in Java — no externa
 - CLI client support
 
 ## Project Structure
+<pre>
 FileShareSystem/
 ├── src/
-│   ├── FileServer.java       # Server - accepts clients, manages ThreadPool
-│   ├── ClientHandler.java    # Handles each client on separate thread
-│   ├── FileClient.java       # CLI client
-│   ├── FileShareGUI.java     # Swing GUI client
-│   └── FileUtils.java        # MD5, byte transfer, progress utilities
-└── shared_files/             # Auto-created on server startup
-
+│   ├── FileServer.java       → Server, manages ThreadPool
+│   ├── ClientHandler.java    → Handles each client on separate thread
+│   ├── FileClient.java       → CLI client
+│   ├── FileShareGUI.java     → Swing GUI client
+│   └── FileUtils.java        → MD5, byte transfer utilities
+└── shared_files/             → Auto-created on server startup
+</pre>
 ## How to Run
 
 ### Compile
